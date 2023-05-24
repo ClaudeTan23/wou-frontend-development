@@ -1,0 +1,154 @@
+.main-body {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: #435479;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    /* padding: 5px; */
+    background-color: #435479;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.header .icon-container {
+    padding: 5px;
+    font-weight: 700;
+    font-size: 26px;
+
+}
+
+.header .link-container {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header .link-container .link {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #C4C5C5;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 50px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    display: flex; */
+}
+
+.header .link-container .link:hover::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    background-color: #C4C5C5;
+    cursor: pointer;
+    bottom: -15px;
+    left: 0;
+    opacity: 0.7;
+}
+
+.header .link-container .link:hover {
+    opacity: 0.7;
+}
+
+.header .link-container .link span {
+    transition: all ease-in-out 0.2s;
+}
+
+.header .link-container .link:hover span {
+    margin-top: -10px;
+}
+
+.header .icon-container a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: #C4C5C5;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    /* padding: 0 10px; */
+    background-color: #435479;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-expand {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #435479;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-left .policy-container {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-left .policy-container a,
+.footer .footer-left .policy-container span,
+.footer-expand .policy-container span {
+    font-size: 14px;
+    color: #89909E;
+    text-decoration: none;
+
+}
+
+.footer-expand .policy-container a {
+    font-size: 14px;
+    color: #89909E;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.footer .footer-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-left .policy-container a:hover {
+    text-decoration: underline;
+}
+
+.footer-expand a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+}
+
+.social-icon {
+    color: #C4C5C5;
+    width: 20px;
+    height: 20px;
+}
+
+.social-icon:hover {
+    color: #89909E;
+    cursor: pointer;
+}
