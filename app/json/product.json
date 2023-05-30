@@ -1,0 +1,90 @@
+{
+    "fruit": [
+        {
+            "name": "lemon",
+            "price": 15,
+            "image": "https://www.muscleandfitness.com/wp-content/uploads/2019/09/1109-Lemons-shutterstock_109833860.jpg?w=1109&quality=86&strip=all"
+        },
+        {
+          "name": "mango",
+          "price": 12,
+          "image": "https://nationaltoday.com/wp-content/uploads/2022/05/28-Mango-Month.jpg.webp"
+        },
+        {
+          "name": "apple",
+          "price": 10,
+          "image": "https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/apples_2.jpg?h=65b39431&itok=MoJheg5x"
+        },
+        {
+          "name": "passion fruit",
+          "price": 20,
+          "image": "https://www.thedailymeal.com/img/gallery/what-is-passion-fruit-and-how-do-you-eat-one/l-intro-1680834173.jpg"
+        }
+    ],
+    "sweet": [
+        {
+          "name": "vanilla",
+          "price": 30,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjyQ_ADfntkbrpx1qo1qpoTTW8_veaRs5piwSvzQMUeE6bS9iZBRPMUwXjcpev77ZNcuM&usqp=CAU"
+        },
+        {
+          "name": "hot chocolate",
+          "price": 25,
+          "image": "https://m.media-amazon.com/images/I/61QSifsOnpL.jpg"
+        },
+        {
+          "name": "milk chocolate",
+          "price": 28,
+          "image": "https://cdn.shopify.com/s/files/1/0251/8410/8606/products/royce-category-barmilk-mood2_1_1024x1024.jpg?v=1594117540"
+        },
+        {
+          "name": "vanilla chocolate",
+          "price": 40,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_hjTuTpvQjkFXE3dL_qhQ3b6uoR9EBmF01SCGvqkTrw1d3gi5ZTN8l6cEU_sI-5QLJKE&usqp=CAU"
+        }
+    ],
+    "vegetable": [
+        {
+          "name": "potato",
+          "price": 22,
+          "image": "https://cdn.vox-cdn.com/thumbor/tdEOBffgQIki4wT2_m6s1ZcN87U=/0x0:640x480/1200x800/filters:focal(269x189:371x291)/cdn.vox-cdn.com/uploads/chorus_image/image/63710320/ur-cute-potato.0.1539757238.0.png"
+        },
+        {
+          "name": "onion",
+          "price": 25,
+          "image": "https://ipcdn.freshop.com/resize?url=https://images.freshop.com/1564405684711055234/78f3a93928bcaa4b3dea0ec9449a46a6_large.png&width=512&type=webp&quality=90"
+        },
+        {
+          "name": "tomato",
+          "price": 12,
+          "image": "https://cdn-prod.medicalnewstoday.com/content/images/articles/273/273031/tomatoes-close-up.jpg"
+        },
+        {
+          "name": "garlic",
+          "price": 17,
+          "image": "https://img.taste.com.au/PRWBKAVs/taste/2007/10/garlic-182553-1.jpg"
+        }
+    ],
+    "bakery": [
+        {
+          "name": "vanilla cake",
+          "price": 42,
+          "image": "https://sugarandsparrow.s3.us-west-2.amazonaws.com/flour/wp-content/uploads/2021/03/18214651/Vegan-Vanilla-cake-recipe-header-final.jpg"
+        },
+        {
+          "name": "chocolate cake",
+          "price": 45,
+          "image": "https://thefirstyearblog.com/wp-content/uploads/2015/11/chocolate-chocolate-cake-1-500x500.png"
+        },
+        {
+          "name": "cheese cake",
+          "price": 55,
+          "image": "https://www.deliciousmagazine.co.uk/wp-content/uploads/2023/03/2023D021_SPICYSWEET_CHEESECAKE-copy.jpg"
+        },
+        {
+          "name": "fruit cake",
+          "price": 69,
+          "image": "https://drivemehungry.com/wp-content/uploads/2022/07/strawberry-cheesecake-11.jpg"
+        }
+    ]
+}
