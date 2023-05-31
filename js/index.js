@@ -1,21 +1,24 @@
 $("document").ready(() => 
 {
     const currency = document.getElementsByTagName("select")[0];
-    let page = window.location.pathname.split('.')[0];
+    let page = window.location.pathname.split('/');
+    page = page[page.length - 1].split(".");
+    page = page[0];
+ 
     let productPage;
 
     switch(page)
     {
-        case "/page1":
+        case "page1":
             productPage = "fruit";
             break;
-        case "/page2":
+        case "page2":
             productPage = "sweet";
             break;
-        case "/page3":
+        case "page3":
             productPage = "vegetable";
             break;
-        case "/page4":
+        case "page4":
             productPage = "bakery";
             break;
     }
