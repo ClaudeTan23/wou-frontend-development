@@ -29,7 +29,11 @@ function loadData()
     .then(response => response.json())
     .then(result => 
     {
-        if(result.length <= 0) return $(".not-found").fadeIn(100);
+        if(result.length <= 0) 
+        {
+            $(".loader").hide();
+            return $(".not-found").fadeIn(100);
+        };
 
         for(let i = 0; i < result.length; i++)
         {
