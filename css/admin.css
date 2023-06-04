@@ -1,0 +1,245 @@
+* {
+    margin:  0 0;
+}
+
+.admin-body {
+    display: flex;
+    flex: 1;
+    background-color: #A9BEE3;
+    padding: 10px 15px;
+    color: #3B3D3F;
+    flex-direction: column;
+}
+
+.admin-block {
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+input[type=search] {
+    outline: none;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+input[type=search]::placeholder {
+    color: #637493;
+}
+
+input[type=search] {
+    padding: 9px 10px 9px 32px;
+    width: 95px;
+    background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: solid 1px #ccc;
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+input[type=search]:focus {
+    width: 200px;
+    background-color: #fff;
+    border-color: #305699;
+    -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+    -moz-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+    box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+}
+
+.add-btn {
+    width: 30px;
+    height: 30px;
+    color: #EDEFF3;
+}
+
+.add-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-family: sans-serif;
+  max-width: 100%;
+}
+
+.content-table thead tr {
+  background-color: #435479;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+  width: 20%;
+  white-space: pre-line;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:nth-of-type(odd) {
+  background-color: #C4CBD7;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #435479;
+}
+
+.content-table tbody tr {
+  font-weight: bold;
+}
+
+.action-btn {
+    /* padding: 0 5px; */
+}
+
+.action-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.action-btn > svg {
+    width: 24px;
+    height: 24px;
+}
+
+.modal-container-add {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(2, 14, 36, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+
+.form-add {
+    height: 550px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    /* transform: translate(-50%, -50%); */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 20px 35px;
+}
+
+.form-add * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.form-add h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.form-add label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-add input, .form-add select {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.form-add select option {
+    color: #435479;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+.form-add button {
+    margin-top: 25px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-add button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.form-add select:hover {
+    cursor: pointer;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+}
+
+.not-found {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#col-name {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    background-color: #e5e5e5;
+}
+
+#col-name:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

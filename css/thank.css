@@ -1,0 +1,41 @@
+* {
+    margin: 0 0;
+}
+
+.thank-container {
+    display: flex;
+    flex: 1;
+    background-color: #E4E9F5;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thank-block {
+    padding: 20px 0;
+    color: #36383B;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.thank-block span {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.thank-block div {
+    font-weight: 600;
+    font-size: 18px;
+    background: linear-gradient(to left, #5374C7, #6353C7, #8D53C7);
+    padding: 10px;
+    border-radius: 20px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    color: #ECE2F6;
+}
+
+.thank-block div:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

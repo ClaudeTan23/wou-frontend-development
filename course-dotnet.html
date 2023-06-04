@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotNet Programming</title>
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/courses.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="modal-warning" style="display: none;">
+        <div class="warning-block">
+            <span role="warning"></span>
+        </div>
+    </div>
+    <div class="modal-container" style="display: none;">
+        <div class="form">
+            <h3>Courses Registration</h3>
+    
+            <label for="name">Name</label>
+            <input type="text" placeholder="Full name" id="name" autocomplete="off" style="width: 95%;" required>
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="example@mail.com" id="email" autocomplete="off" style="width: 95%;" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="number" placeholder="Phone number" id="phone" autocomplete="off" style="width: 95%;" required>
+    
+            <label for="courses">Courses</label>
+            <select id="courses">
+                <option>DotNet Programming</option>
+                <option>Java Programming</option>
+            </select>
+            <button>Submit</button>
+        </div>
+    </div>
+    <div class="main-body" style="min-height: 100vh">
+        <div class="header">
+            <div class="icon-container">
+                <a href="./index.html">
+                    <span>ABC Learning Center</span>
+                </a>
+            </div>
+            <div class="link-container">
+                <a class="link" href="./index.html">
+                    <span>Home</span>
+                </a>
+                <div class="link">
+                    <span>Courses</span>
+                    <div class="dropdown-block">
+                        <div class="courses-block">
+                            <div class="courses-title" course="dotnet">
+                                <div>
+                                    Dot Net Programming
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="caret-down"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                </svg>
+                            </div>
+                            <div class="courses-content" content="dotnet">
+                                <a href="./course-dotnet.html">
+                                    Details
+                                </a>
+                            </div>
+                            <div class="courses-content" content="dotnet">
+                                <a href="./schedule-dotnet.html">
+                                    Schedule
+                                </a>
+                            </div>
+                        </div>
+                        <div class="courses-block">
+                            <div class="courses-title" course="java">
+                                <div>
+                                    Java Programming
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="caret-down"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                </svg>
+                            </div>
+                            <div class="courses-content" content="java">
+                                <a href="./course-java.html">
+                                    Details
+                                </a>
+                            </div>
+                            <div class="courses-content" content="java">
+                                <a href="./schedule-java.html">
+                                    Schedule
+                                </a>
+                            </div>
+                        </div>
+                        <div class="courses-block">
+                            <div class="courses-title" onclick="window.location.replace('./courses.html')">
+                                <div>
+                                    All Courses
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="link" href="./about.html">
+                    <span>About Us</span>
+                </a>
+                <a class="link" href="./contact.html">
+                    <span>Contact Us</span>
+                </a>
+                <div class="register-btn">
+                    <span>Register</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="course-container">
+                <div class="left-block">
+                    <div class="left-block-header">
+                        <span>Dot Net Programming</span>
+                    </div>
+                    <div class="left-block-content">
+                        The Comprehensive .NET Programming Course is designed to provide a comprehensive understanding of .NET development,
+                        equipping students with the knowledge and skills to build a wide range of applications using the .NET framework. From
+                        desktop to web and mobile development, this course covers essential concepts, best practices, and hands-on exercises to
+                        develop proficiency in .NET programming.
+                    </div>
+                </div>
+                <div class="right-block">
+                    <img src="./assets/7.jpg" alt="./assets/7.jpg">
+                </div>
+            </div>
+
+            <div class="body-block">
+                <div style="display: flex;">
+                    <div class="left-block-container">
+                    <div class="body-left-block">
+                        <div class="b-content" view="1">
+                            Overview
+                        </div>
+                        <div class="underline-block"></div>
+                        <div class="b-content" view="2">
+                            Program Structure
+                        </div>
+                        <div class="underline-block"></div>
+                        <div class="b-content" view="3">
+                            Schedule
+                        </div>
+                        <!-- <div class="underline-block"></div>
+                        <div class="b-content" view="4">
+                            Register Now
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="body-right-block">
+                    <div class="r-block" style="background-color: #425983; color: #C4C5C5; border: 4px solid #032159;">
+                        <p>.NET is a software development framework developed by Microsoft that supports multiple programming languages, including C#, Visual Basic, and F#. It provides a platform for building a wide range of applications, including web, desktop, mobile, and cloud-based applications. Here's an overview of .NET programming:
+                        </p>
+                        
+                        <p>Common Language Runtime (CLR): At the heart of .NET is the Common Language Runtime, which provides a managed execution environment for running .NET applications. It handles tasks such as memory management, garbage collection, and exception handling.
+                        </p>
+                        
+                        <p>Language Support: .NET supports various programming languages, with C# being the most commonly used. C# is a modern, object-oriented language with similarities to Java. Visual Basic and F# are also popular choices for .NET development.
+                        </p>
+                        
+                        <p>Frameworks and Libraries: .NET offers a rich set of frameworks and libraries that developers can leverage to build applications more efficiently. Some notable frameworks include:
+                        
+                        .NET Framework: The original framework for building Windows desktop applications.
+                        .NET Core: A cross-platform framework for developing applications on Windows, macOS, and Linux.
+                        ASP.NET: A framework for building web applications, including web APIs and MVC applications.
+                        Entity Framework: An object-relational mapping (ORM) framework for working with databases.
+                        Xamarin: A framework for developing cross-platform mobile applications for iOS and Android.
+                        Azure Functions: A serverless computing platform for building event-driven applications in the cloud.
+                        Integrated Development Environments (IDEs): Developers can use various IDEs to write .NET code, including:
+                        
+                        Visual Studio: The flagship IDE for .NET development, providing a comprehensive set of tools and features.
+                        Visual Studio Code: A lightweight, cross-platform code editor with excellent support for .NET development.
+                        JetBrains Rider: A powerful IDE that supports .NET development and is available for multiple platforms.
+                        Package Management: .NET uses NuGet as its package manager, allowing developers to easily discover, install, and manage
+                        third-party libraries and packages.
+                        </p>
+                        
+                        <p>Cross-Platform Development: With the introduction of .NET Core, .NET became a cross-platform framework. Developers can write code once and deploy it on multiple platforms, including Windows, macOS, and Linux.</p>
+                        
+                        <p>Cloud Integration: .NET seamlessly integrates with Microsoft Azure, a popular cloud computing platform. Developers can leverage Azure services, such as Azure App Service, Azure Functions, and Azure Storage, to build scalable and robust cloud-based applications.</p>
+                        
+                        <p>Community and Support: .NET has a large and active developer community. Microsoft provides extensive documentation, tutorials, and resources to support developers. Additionally, online communities and forums are available for discussing and seeking help with .NET programming.</p>
+                    </div>
+
+                    <div class="module-container" style="display: none;">
+                        <div class="module-header-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="caret-down"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <span style="padding: 0 5px">Module 1</span>
+                        </div>
+                        <div class="module-content" module="1" style="display: none;">
+                            <p>Module 1: Introduction to .NET Programming</p>
+                            
+                            <p>Topics Covered:</p>
+                            
+                            <p>What is .NET? 
+                                Definition and overview of the .NET framework. Advantages of using .NET for software development. Comparison with other frameworks and platforms.</p>
+                            
+                            <p>Common Language Runtime (CLR) 
+                                Understanding the role of CLR in executing .NET applications. Memory management, garbage collection, and exception handling provided by CLR. Just-In-Time (JIT) compilation process.</p>
+                            
+                            <p>Programming Languages in .NET:
+                            Overview of programming languages supported in .NET, including C#, Visual Basic, and F#. Language features and syntax. Choosing the right language for your project.</p>
+                            
+                            <p>Development Environments:
+                                Introduction to Integrated Development Environments (IDEs) for .NET programming. Overview of Visual Studio, Visual Studio Code, and JetBrains Rider. Setting up your development environment.
+                            </p>
+                            
+                            <p>Creating a .NET Project:
+                                Creating a new project using a selected IDE. Understanding project structures and file organization. Building and running your first .NET application.
+                            </p>
+
+                            <p>Building Blocks of a .NET Application:
+                                Introduction to namespaces, classes, and methods. Creating and organizing code files. Implementing basic functionality.
+                            </p>
+                            
+                        </div>
+
+                        <div class="module-header-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="caret-down"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <span style="padding: 0 5px">Module 2</span>
+                        </div>
+                        <div class="module-content" module="2" style="display: none;">
+                            <p>Module 2: Object-Oriented Programming in .NET</p>
+
+                            <p>Overview:</p>
+                            <p>This module delves into object-oriented programming (OOP) concepts and their implementation in .NET. You will learn about classes, objects, inheritance, polymorphism, and other essential OOP principles. Understanding and applying OOP in .NET will enable you to design and build robust and maintainable applications.</p>
+                        
+                            <p>Topics Covered:</p>
+
+                            <p>Review of key OOP concepts, such as encapsulation, inheritance, and polymorphism. Understanding the benefits of OOP in software development. Applying OOP principles to solve real-world problems.</p>
+                            
+                            <p>Classes and Objects:
+                                Creating classes and objects in .NET. Defining properties, methods, and constructors. Access modifiers and their impact on encapsulation.</p>
+
+                            
+                            <p>Inheritance and Polymorphism:
+                                Implementing inheritance hierarchies in .NET. Creating derived classes and base classes. Overriding and extending base class functionality. Utilizing polymorphism to write flexible and extensible code.
+                            </p>
+                            
+                            <p>Abstract Classes and Interfaces:
+                                Understanding abstract classes and their purpose. Implementing interfaces for defining contracts. Comparing abstract classes and interfaces. Applying abstraction to achieve loose coupling.
+                            </p>
+                            
+                            <p>Object-Oriented Design Principles:
+                                Overview of SOLID principles (Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion). Applying SOLID principles to enhance code quality and maintainability. Design patterns commonly used in .NET development.
+                            </p>
+                            
+                            <p>Exception Handling in OOP:
+                                Understanding the role of exceptions in error handling. Catching and throwing exceptions in .NET. Creating custom exceptions for specific scenarios. Implementing proper exception handling strategies.
+                            </p>
+                            
+                        </div>
+
+                        <div class="module-header-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="caret-down"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                            <span style="padding: 0 5px">Module 3</span>
+                        </div>
+                        <div class="module-content" module="3" style="display: none;">
+                            <p>Module 3: Building Web Applications with ASP.NET</p>
+
+                            <p>Overview:
+                            This module introduces ASP.NET, a powerful framework for building web applications using .NET. You will learn how to create dynamic web pages, handle user requests, interact with databases, and implement security measures. By the end of this module, you will have the skills to develop robust and scalable web applications with ASP.NET.</p>
+
+                            <p>Topics Covered:</p>
+
+                            <p>Introduction to ASP.NET:
+                            Overview of ASP.NET and its role in web application development. Understanding the ASP.NET architecture and request lifecycle. Comparison between ASP.NET Web Forms and ASP.NET MVC.</p>
+                            
+                            <p>ASP.NET MVC:
+                            Introduction to the Model-View-Controller (MVC) architectural pattern. Creating controllers, views, and models in ASP.NET MVC. Routing requests and handling URL patterns. Implementing data validation and form submission.</p>
+
+                            <p>Working with Razor Views:
+                            Using Razor syntax for creating dynamic web pages. Rendering data from models in views. Utilizing layout pages and partial views for code reusability.</p>
+                            
+                            <p>Data Access with Entity Framework:
+                            Overview of Entity Framework (EF) as an Object-Relational Mapping (ORM) tool. Configuring and connecting to databases. Performing CRUD operations using EF and LINQ (Language Integrated Query).</p>
+        
+                            <p>Building RESTful Web APIs:
+                            Introduction to ASP.NET Web API for creating HTTP-based services. Implementing GET, POST, PUT, and DELETE operations. Handling authentication and authorization in Web APIs. Versioning and documentation of APIs.</p>
+
+                            <p>User Authentication and Authorization:
+                            Implementing user authentication with ASP.NET Identity. Managing user registration, login, and password reset functionalities. Applying role-based and claims-based authorization.</p>
+                            
+                            <p>Client-Side Development with JavaScript and CSS:
+                            Integrating JavaScript libraries and frameworks in ASP.NET applications. Working with CSS and Bootstrap for responsive web design. Enhancing user experience with AJAX and client-side validation.</p>
+                      
+                        </div>
+                    </div>
+
+                    <div class="schedule-container" style="display: none;">
+                        <div class="schedule-header">
+                            <span>Intake Session</span>
+                        </div>
+                        <div class="schedule-date">
+                            <p>7 days of study time for dot net programming course.</p>
+                            <p>The table below is a calculated from today schedule for the course excluded weekend.</p>
+                        </div>
+
+                        <table>
+                            <tr>
+                                <th>Course Module</th>
+                                <th>Days</th>
+                                <th>Date</th>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+                
+                </div>
+
+                <div class="footer">
+                    <div class="footer-left">
+                        <div class="policy-container">
+                            <a href="./policy.html">
+                                <span>Policy</span>
+                            </a>
+                        </div>
+                        <div class="policy-container">
+                            <a href="./sitemap.html">
+                                <span>Sitemap</span>
+                            </a>
+                        </div>
+                        <div class="policy-container">
+                            <span>
+                                ABC Learning Center, Inc. © 2023. All rights reserved.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <a href="#facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social-icon"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                        </a>
+                        <a href="#instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social-icon"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </a>
+                        <a href="#twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social-icon"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="footer">
+            <div class="footer-left">
+                <div class="policy-container">
+                    <a href="./policy.html">
+                        <span>Policy</span>
+                    </a>
+                </div>
+                <div class="policy-container">
+                    <a href="./sitemap.html">
+                        <span>Sitemap</span>
+                    </a>
+                </div>
+                <div class="policy-container">
+                    <span>
+                        ABC Learning Center, Inc. © 2023. All rights reserved.
+                    </span>
+                </div>
+            </div>
+            <div class="footer-right">
+                <a href="#facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social-icon"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </a>
+                <a href="#instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social-icon"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </a>
+                <a href="#twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social-icon"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                </a>
+            </div>
+        </div> -->
+    </div>
+    <script src="./js/dropdown-header.js"></script>
+    <script src="./js/courses.js"></script>
+</body>
+</html>

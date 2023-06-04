@@ -1,0 +1,30 @@
+* {
+    margin: 0 0;
+}
+
+.policy-block {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #AFB4B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.policy-block .policy-header {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.policy-block .content {
+    width: 65%;
+    white-space: pre-line;
+    /* word-break: break-all; */
+    z-index: 1;
+    font-size: 16px;
+    word-spacing: 5px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+
+}
