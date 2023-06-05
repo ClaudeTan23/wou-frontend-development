@@ -2,7 +2,7 @@ let page = window.location.href.split("/");
 page = page[page.length - 1].split(".");
 page = page[0];
 
-if(page === "admin")
+if(true)
 {
     $("document").ready((e) => 
     {

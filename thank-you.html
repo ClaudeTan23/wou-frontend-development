@@ -11,29 +11,28 @@
 </head>
 <body>
     <div class="modal-container" style="display: none;">
-        <div class="form">
-            <h3>Courses Registration</h3>
-    
-            <label for="name">Name</label>
-            <input type="text" placeholder="Full name" id="name" autocomplete="off" style="width: 95%;" required>
-
-            <label for="email">Email</label>
-            <input type="email" placeholder="example@mail.com" id="email" autocomplete="off" style="width: 95%;" required>
-
-            <label for="phone">Phone Number</label>
-            <input type="number" placeholder="Phone number" id="phone" autocomplete="off" style="width: 95%;" required>
-    
-            <label for="courses">Courses</label>
-            <select id="courses">
-                <option>DotNet Programming</option>
-                <option>Java Programming</option>
-            </select>
-    
-            <!-- <label for="courses"></label> -->
-    
-            <button>Submit</button>
-        </div>
-    </div>
+        <form>
+            <div class="form">
+                <h3>Courses Registration</h3>
+            
+                <label for="name">Name</label>
+                <input type="text" placeholder="Full name" id="name" autocomplete="off" style="width: 95%;" required>
+            
+                <label for="email">Email</label>
+                <input type="email" placeholder="example@mail.com" id="email" autocomplete="off" style="width: 95%;" required>
+            
+                <label for="phone">Phone Number</label>
+                <input type="tel" placeholder="123-4567890" pattern="[0-9]{3}-[0-9]{7}" id="phone" autocomplete="off" style="width: 95%;" required>
+            
+                <label for="courses">Courses</label>
+                <select id="courses">
+                    <option>DotNet Programming</option>
+                    <option>Java Programming</option>
+                </select>
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>>
     <div class="main-body" style="flex-flow: column; height: 100vh;">
         <div class="header">
             <div class="icon-container">
